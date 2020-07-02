@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>抖音页面模仿</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+    	*{
+    		margin:0;
+    		padding:0;
+
+    	}
+        ul li{
+
+             list-style: none;
+             
+        }
+        body {
+
+            
+            /*height: 9500px;
+*/
+        }
+        ul li a{
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        /*版心*/
+        .w {
+
+            width: 1180px;
+            margin: 0 auto;
+
+
+        }
+        /*  页面头部开始*/
+        /*页面头部 固定不动*/
+    	.yetou{
+           
+    		position: fixed;
+    		height: 45px;
+    		background: #fdfdfd;
+            width: 1905px;
+
+    		
+    	}
+        .logo{
+            
+            float: left;
+            width: 160px;
+            height: 45px;
+            
+            margin-left: 100px;
+           
+        }
+       
+        .yetouzizhengti{
+            
+            /*display: block;*/
+            width: 660px;
+            height: 45px;
+            line-height: 45px;
+            float: left;
+            margin-left: 280px;
+            
+
+        }
+        .yetouzizhengti  li{
+
+
+            display: inline-block;
+
+        }
+        .yetouzizhengti  li a{
+            /*display: block;*/
+            float: left;
+            /*height: 50px;*/
+            margin-left: 50px;
+            color: #847f7f;
+
+        }
+        .yetouzizhengti  li a:hover{
+            /*background: red;*/
+            color: red;
+        }
+       /* .yetouzizhengti a{
+            color: #847f7f;
+        }*/
+
+        .denglu{
+            position: relative;
+            float: right;
+            width: 80px;
+            height: 40px;
+            margin-top: 2px;
+            margin-right: 90px;
+                 
+        }
+        /*  页头结束*/
+        /*海报开始*/
+        .haibao img{
+            width: 1905px;
+        }
+        /*海报结束*/
+        /*为您提供服务开始*/
+        .wei {
+            height: 180px;
+            line-height: 180px;
+            text-align: center;
+            /*background: pink;*/
+            font-size: 40px;
+        }
+        .weining{
+            height: 350px;
+         /*   background: pink;*/
+
+        }
+        .serve-01{
+            float: left;
+            width: 280px;
+            height: 350px;
+            margin-left: 70px;
+        }
+        .serve-01 img{
+            height: 220px;
+            margin-left: 28px;
+        }
+        .serve-01 h4{
+            text-align: center;
+            font-size: 22px;
+            font-weight: 400;
+            color: #343434;
+            margin-bottom: 14px;
+
+        }
+        .serve-01 p{
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            color: #9b9a9a;
+        }
+        .serve-02{
+            float: left;
+            width: 280px;
+            height: 350px;
+            margin-left: 100px;
+        }
+       
+        .serve-02 img{
+            height: 220px;
+            margin-left: 28px;
+        }
+        .serve-02 h4 {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 400;
+            color: #343434;
+            margin-bottom: 14px;
+        }
+        .serve-02 p{
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            color: #9b9a9a;
+        }
+
+
+         .serve-03{
+            float: left;
+            width: 280px;
+            height: 350px;
+            margin-left: 100px;
+        }
+       
+        .serve-03 img{
+            height: 220px;
+            margin-left: 28px;
+            
+
+        }
+        .serve-03 h4 {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 400;
+            color: #343434;
+            margin-bottom: 14px;
+        }
+        .serve-03 p{
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            color: #9b9a9a;
+        }
+        /*为您提供服务结束*/
+
+        /*能力展示开始*/
+        .nengli{
+            
+            height: 150px;
+           /* background: pink;*/
+        }
+        .nengli ul{
+
+             height: 150px;
+             width: 1500px;
+             /*background: red;*/
+
+
+
+        }
+        .nengli li{
+            float: left;
+            margin-right: 195px;
+            width: 150px;
+            height: 150px;
+            /*background: blue;*/
+        }
+        .nengli img{
+            height: 100px;
+            margin-left: 25px;
+
+        }
+        .nengli li p {
+
+            text-align: center;
+            font-size: 22px;
+        }
+
+        /*能力展示结束*/
+        /*案例展示开始*/
+        .anli{
+
+            /*background: pink;*/
+            height: 230px;
+            text-align: center;
+            margin-top: 180px;
+
+        }
+        .anli h4{
+
+            font-size: 40px;
+            font-weight: 400;
+            margin-bottom: 40px;
+
+        }
+        .anli  p{
+           /* display: block;*/
+            font-size: 18px;
+            /*height: 70px;*/
+            line-height: 33px;
+           /* width: 1180px;*/
+           
+        }
+        /*案例展示结束*/
+
+
+       /* 快剪辑开始*/
+        .kuai{
+            
+            height: 650px;
+            /*background: pink;*/
+
+
+       }
+        .kuai-l{
+            float: left;
+            height: 650px;
+            width: 480px;
+            /*background: red;*/
+            font-size: 13px;
+            color: #9b9a9a;
+            line-height: 36px;
+       }
+
+        .kuai-l img{
+            margin-bottom: 20px;
+
+      }
+      .kuai-l div{
+            margin-bottom: 30px;
+
+
+       }
+       .kuai-l h4{
+
+            font-weight: 400;
+            font-size: 19px;
+            color: #343434;
+       }
+        .kuai-r{
+            float: right;
+            height: 650px;
+            width: 560px;
+            /*background: blue;*/
+
+       }
+        .kuai-r img{
+
+            margin-top: 20px;
+        }
+       
+
+
+
+        /*快剪辑结束*/
+
+        /*接入流程开始*/
+        .jieru{
+            position: relative;
+            width: 100%;
+            background:#f5f5f5;
+            height: 600px;
+            
+
+            
+        }
+        .jieru h2 {
+            /*text-align: center;*/
+            float: left;
+            height: 60px;
+            width: 170px;
+            margin-top: 90px;
+            margin-left: 550px;
+            margin-bottom: 50px;
+            font-weight: 400;
+            font-size: 38px;
+            /*background: pink;*/
+        }
+        .jieru img{
+            /*margin-top: px;*/
+            width: 60px;
+            margin-right: 20px;
+            vertical-align: middle;
+
+
+        }
+
+        .jieru .jiewenzi{
+            
+            float: left;
+            width: 1000px;
+            /*height: 150px;
+            line-height: 150px;*/
+            /*vertical-align: middle;*/
+
+            /*margin-top: 250px;*/
+            /*background: pink;*/
+            margin-left: 180px;
+            
+
+        }
+        .jiewenzi span {
+            display: inline-block;
+            margin-right: 60px;
+            
+
+        }
+        .liji {
+            position: absolute;
+            float: left;
+            width: 185px;
+            height: 65px;
+            line-height: 65px;
+            background: #fe2d54;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: 400px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+
+     }
+     .liji a{
+        color: #ffffff;
+           
+    }
+
+        /*接入流程结束*/
+    </style>
+   
+
+</head>
+<body>
+    <!-- 页面头部 -->
+    <div class="yetou">
+        
+        <a href="https://open.douyin.com/platform" target="_blank"><img class="logo" src="tupian/douyinlogo.png"></a>
+       
+        
+        <div class="yetouzizhengti">
+            <ul>
+                <li><a href="#" target="_blank">移动应用</a></li>
+                <li><a href="#">网站应用</a></li>
+                <li><a href="#">管理中心</a></li>
+                <li><a href="https://open.douyin.com/platform/doc" target="_blank" >资源中心</a></li>
+                <li><a href="#">解决方案</a></li>
+            </ul>
+        </div>
+        
+        <a href="https://www.douyin.com/" target="_blank" ><img class="denglu" src="tupian/1.png"></a>
+
+    </div>
+    <!-- 页头结束 -->
+ <!--    海报部分 -->
+    
+     <div class="haibao">
+         
+        <img src="tupian/haibao1.png">
+    </div>
+    	<!-- 为您提供服务开始 -->
+    <div class="wei w">
+        为您提供
+    </div>
+    <div class="weining w">
+        <div class="serve-01">
+            <img src="tupian/serve-01.png">
+            <h4>移动/网站应用开发</h4>
+            <p>接入抖音账号授权登录，内容分享至抖音快速连接海量抖音用户</p>
+        </div>
+         <div class="serve-02">
+            <img src="tupian/serve-02.png">
+            <h4>系统应用开发</h4>
+            <p>实现抖音账号授权，一键发布内容入抖音，自有数据接口回流</p>
+        </div>
+         <div class="serve-03">
+            <img src="tupian/serve-03.png">
+            <h4>移动/网站应用开发</h4>
+            <p>为广大内容创作者和抖音生态提供服务和行业解决方案</p>
+        </div>
+    </div>
+    <!-- 为您提供服务结束 -->
+
+   <!--  能力展示开始 -->
+    <div class="wei w">
+        能力展示
+    </div>
+    <div class="nengli w">
+        <ul>
+            <li>
+                <img src="tupian/ability-01.png">
+                <p>授权登录</p>
+            </li>
+            <li>
+                <img src="tupian/ability-02.png">
+                <p>分享</p>
+            </li>
+            <li>
+                <img src="tupian/ability-03.png">
+                <p>一键发布</p>
+            </li>
+            <li>
+                <img src="tupian/ability-04.png">
+                <p>数据分析</p>
+            </li>
+        </ul>
+
+        
+
+    </div>
+
+    <!--  能力展示结束 -->
+
+    <!--  案例展示开始 -->
+    <div class="anli w">
+        <h4>案例展示</h4>
+        <p>抖音开放平台现已为多个行业提供解决方案，目前已涵盖：智能硬件、工具类，生活类，电商类，广电媒体以及游戏行业。帮助企业更好的进行精细化运营，提升商业价值。</p>
+    </div>
+
+    <!--  案例展示结束 -->
+    <!-- 快剪辑开始 -->
+    <div class="kuai w">
+        <div  class="kuai-l">
+            <img src="tupian/kuai-logo.png" width="145px">
+            <div>
+                <h4>快剪辑是抖音开放平台早期接入方，将抖音开放平台和工具类应用结合起来。</h4>
+            </div>
+            
+            <div>
+                <h4>抖音登录</h4>
+                快剪辑是抖音开放平台早期接入方，将抖音开放平台和工具类应用结合起来。
+            </div>
+
+            <div>
+                <h4>视频分享</h4>
+                通过分享接口将制作好的视频直接分享到抖音，缩短发布流程，持续激发创作热情。
+            </div>
+
+            <div>
+                <h4>携带话题</h4>
+                分享同时携带话题，在抖音端内聚合内容。
+
+
+            </div>
+
+        </div>
+
+
+        <div  class="kuai-r">
+             <img src="tupian/kuai.png" width="100%" >
+            
+
+        </div>
+    </div>
+
+    <!-- 快剪辑结束 -->
+
+    <!-- 大疆开始 -->
+    <div class="kuai w">
+        <div  class="kuai-l">
+            <img src="tupian/dji-logo.png" width="145px">
+            <div>
+                <h4>快剪辑是抖音开放平台早期接入方，将抖音开放平台和工具类应用结合起来。</h4>
+            </div>
+            
+            <div>
+                <h4>抖音登录</h4>
+                快剪辑是抖音开放平台早期接入方，将抖音开放平台和工具类应用结合起来。
+            </div>
+
+            <div>
+                <h4>视频分享</h4>
+                通过分享接口将制作好的视频直接分享到抖音，缩短发布流程，持续激发创作热情。
+            </div>
+
+            <div>
+                <h4>携带话题</h4>
+                分享同时携带话题，在抖音端内聚合内容。
+
+
+            </div>
+
+        </div>
+
+
+        <div  class="kuai-r">
+             <img src="tupian/dji.png" width="100%" >
+            
+
+        </div>
+    </div>
+
+    <!-- 大疆结束 -->
+
+    <!-- 肚皮开始 -->
+    <div class="kuai w">
+        <div  class="kuai-l">
+            <img src="tupian/dupi-logo.png" width="145px">
+            <div>
+                <h4>快剪辑是抖音开放平台早期接入方，将抖音开放平台和工具类应用结合起来。</h4>
+            </div>
+            
+            <div>
+                <h4>抖音登录</h4>
+                快剪辑是抖音开放平台早期接入方，将抖音开放平台和工具类应用结合起来。
+            </div>
+
+            <div>
+                <h4>视频分享</h4>
+                通过分享接口将制作好的视频直接分享到抖音，缩短发布流程，持续激发创作热情。
+            </div>
+
+            <div>
+                <h4>携带话题</h4>
+                分享同时携带话题，在抖音端内聚合内容。
+
+
+            </div>
+
+        </div>
+
+
+        <div  class="kuai-r">
+             <img src="tupian/dupi.png" width="100%" >
+            
+
+        </div>
+    </div>
+
+    <!-- 肚皮结束 -->
+
+    <!-- 中科开始 -->
+    <div class="kuai w">
+        <div  class="kuai-l">
+            <img src="tupian/dayang-logo.png" width="145px">
+            <div>
+                <h4>快剪辑是抖音开放平台早期接入方，将抖音开放平台和工具类应用结合起来。</h4>
+            </div>
+            
+            <div>
+                <h4>抖音登录</h4>
+                快剪辑是抖音开放平台早期接入方，将抖音开放平台和工具类应用结合起来。
+            </div>
+
+            <div>
+                <h4>视频分享</h4>
+                通过分享接口将制作好的视频直接分享到抖音，缩短发布流程，持续激发创作热情。
+            </div>
+
+            <div>
+                <h4>携带话题</h4>
+                分享同时携带话题，在抖音端内聚合内容。
+
+
+            </div>
+
+        </div>
+
+
+        <div  class="kuai-r">
+             <img src="tupian/dayang.png" width="100%" >
+            
+
+        </div>
+    </div>
+
+    <!-- 中科结束 -->
+
+    <!-- 接入流程开始 -->
+    <div class="jieru">
+        <div class="w">
+
+            <h2>接入流程</h2>
+            <div class="jiewenzi">
+
+                <img src="tupian/01.png"><span>开发者帐号注册</span>
+                <img src="tupian/02.png"><span>应用接入申请</span>
+                <img src="tupian/03.png"><span>接入信息审核</span>
+                <img src="tupian/04.png"><span>第三方集成开发</span>
+
+            </div>
+           <div class="liji">
+                <a href="#">立即加入</a>
+               
+           </div>
+
+        </div>
+
+        
+        
+
+    </div>
+
+
+
+    <!-- 接入流程开始 -->
+
+</body>
+</html>
